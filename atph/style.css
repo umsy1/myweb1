@@ -1,0 +1,295 @@
+/* Card and Content Styling */
+.card-text {
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+/* General header styling */
+.header {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    justify-content: space-between;
+    /* Spread logo, tagline, and navigation */
+    padding: 20px;
+    /* Add spacing inside the header */
+    background-color: black;
+    /* Light background */
+    border-bottom: 2px solid #ddd;
+    color: #fff;
+    /* Optional border */
+}
+
+/* Logo container */
+.logo-container {
+    flex: 1;
+    /* Takes the leftmost space */
+}
+
+.logo {
+    max-width: 150px;
+    /* Limit the logo size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Tagline styling */
+.tagline {
+    flex: 2;
+    /* Center section */
+    text-align: center;
+    /* Align the tagline in the center */
+}
+
+.tagline p {
+    font-weight: bolder;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    /* Adjust size as needed */
+    color: white;
+    /* Darker color for readability */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Navigation styling */
+.navigation {
+    flex: 1;
+    /* Takes the rightmost space */
+    text-align: right;
+    /* Align navigation to the right */
+}
+
+.navigation ul {
+    list-style: none;
+    /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Arrange items horizontally */
+    gap: 20px;
+    /* Add space between items */
+}
+
+.navigation li {
+    display: inline;
+    /* Inline list items */
+}
+
+.navigation a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #007bff;
+    /* Blue links */
+    font-weight: bold;
+    /* Emphasize the text */
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+.company-name {
+    font-family: 'Arial', sans-serif;
+    /* Choose a clean font */
+    font-size: 2.5rem;
+    /* Adjust size based on preference */
+    color: #333;
+    /* Dark text color for contrast */
+    text-align: center;
+    /* Center the text */
+    margin: 20px 0;
+    /* Add spacing around the name */
+}
+
+.company-subtitle {
+    font-family: 'Arial', sans-serif;
+    /* Same font for consistency */
+    font-size: 1.2rem;
+    /* Slightly smaller text for subtitle */
+    color: #555;
+    /* Softer text color */
+    text-align: center;
+    /* Center the subtitle as well */
+    margin-bottom: 20px;
+    /* Add spacing below the subtitle */
+}
+
+/* Hero Section (Carousel) */
+#hero {
+    height: 70vh;
+    /* Reduced height of the hero section */
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    /* Prevents images from overflowing the container */
+}
+
+#hero2 .carousel-inner {
+    font-weight: bolder;
+    height: 70%;
+    /* Ensures the carousel container takes up the full height */
+}
+
+#hero2 .carousel-item {
+    height: 100%;
+    /* Makes sure each carousel item fills the height */
+}
+
+#hero2 .carousel-item img {
+    object-fit: auto;
+    /* Ensures the image covers the area of the carousel container */
+    width: 150%;
+    /* Ensures the image is fully contained in the carousel width */
+    height: 110%;
+    /* Ensures the image does not stretch and stays proportional */
+}
+
+/* About Us Section - Adjust image container */
+#about {
+    padding: 100px 55px;
+    /* Reduce padding to make the section size more compact */
+}
+
+#about img {
+    max-width: 80%;
+    /* Reduce the width of the image */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    /* Center the image */
+}
+
+/* Services Section - Adjust cards */
+#services .card {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 90%;
+    /* Reduce card size */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    #hero {
+        height: 60vh;
+        /* Further reduced height for mobile screens */
+    }
+
+    #hero .carousel-item img {
+        object-fit: contain;
+        /* Ensure the image fits properly on small screens */
+        height: auto;
+        /* Adjust height to auto for better fit */
+    }
+
+    #about img {
+        max-width: 100%;
+        /* Allow the image to use full width on mobile */
+        height: auto;
+    }
+
+    #services .card {
+        width: 100%;
+        /* Cards will take full width on smaller devices */
+    }
+}
+
+/* About Us Section */
+#about {
+    background-color: #f8f9fa;
+    font-weight: bolder;
+}
+
+#about img {
+    border-radius: 8px;
+}
+
+/* Services Section */
+#services {
+    background-color: #f1f1f1;
+}
+
+#services .card {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#services .card-img-top {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons .btn {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    transition: transform 0.3s;
+}
+
+.social-icons .btn:hover {
+    transform: scale(1.1);
+}
+
+.social-icons .btn-success {
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+.social-icons .btn-danger {
+    background-color: #e1306c;
+    border-color: #e1306c;
+}
+
+.social-icons .btn-dark {
+    background-color: #010101;
+    border-color: #010101;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        padding: 5px 10px;
+    }
+
+    #services .card {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+
+    .social-icons .btn {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+}
